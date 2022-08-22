@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+
+    <bean id = "addy" class="JavaBasedConfig.Address">
+        <constructor-arg index="0" value="Chicago"/>
+        <constructor-arg index="1" value="Illinois"/>
+        <constructor-arg index="2" value="United States"/>
+        <constructor-arg index="3" value="60016"/>
+    </bean>
+
+
+    <context:annotation-config/>
+
+    <bean id = "fone" class="JavaBasedConfig.Phone">
+        <property name="mob" value="2246059984"/>
+    </bean>
+
+
+
+
+</beans>
